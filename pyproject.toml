@@ -46,7 +46,9 @@ dependencies = [
     "pyjwt",
     "pyyaml",
     "redis>=4.2.0",
-    "safir[db,kubernetes]>=6.2.0",
+    #"safir[db,kubernetes]>=6.2.0",
+    "safir-logging @ git+https://github.com/lsst-sqre/safir@tickets/DM-46034#subdirectory=safir-logging",
+    "safir[db,kubernetes] @ git+https://github.com/lsst-sqre/safir@tickets/DM-46034#subdirectory=safir",
     "sqlalchemy",
     "structlog",
 ]
